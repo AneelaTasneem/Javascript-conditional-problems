@@ -62,10 +62,9 @@ if (alphabet.length === 1) {
   console.log("Enter a single character");
 }
 
+/*6: Write Javascript programme to check whether a number is positive, negative or zero*/
 
-/*6: Write Javascript programme to check whether a number is positive, negative or zero*/ 
-
-let num=0;
+let num = 0;
 
 if (num > 0) {
   console.log("Number is positive");
@@ -75,8 +74,7 @@ if (num > 0) {
   console.log("Number is zero");
 }
 
-
-/*7: Write a javascript programme to check whether a number is divisible by 5 and 11 or not*/ 
+/*7: Write a javascript programme to check whether a number is divisible by 5 and 11 or not*/
 
 let num6 = 75;
 
@@ -84,9 +82,9 @@ if (num6 % 5 === 0 && num6 % 5 === 0) {
   console.log("NUmber is divisible by 5 and 11");
 } else {
   console.log("Number is not divisible by 5 and 11");
-};
+}
 
-/* 8:Write a javascripr programme to to check vowel or consonant*/ 
+/* 8:Write a javascripr programme to to check vowel or consonant*/
 
 let word = "b";
 
@@ -102,14 +100,14 @@ if (
   console.log("WORD IS CONSONANT");
 }
 
-/* 9: Write a javascript programme to check  whether a character is alphabet, digit or special character*/ 
+/* 9: Write a javascript programme to check  whether a character is alphabet, digit or special character*/
 
-let input = '8';
+let input = "8";
 
 if (input.length === 1) {
   if ((input >= "A" && input <= "Z") || (input >= "a" && input <= "z")) {
     console.log("It is an alphabet");
-  } else if (input >= '0' || input <= '9') {
+  } else if (input >= "0" || input <= "9") {
     console.log("It is a number");
   } else {
     console.log("It is a special character");
@@ -118,7 +116,7 @@ if (input.length === 1) {
   console.log("Enter a single entity");
 }
 
-/* 10: Write a javascript programme to check whether a character is uppercase or lowercase*/ 
+/* 10: Write a javascript programme to check whether a character is uppercase or lowercase*/
 
 let character = "*";
 
@@ -134,8 +132,7 @@ if (character.length === 1) {
   console.log("Enter valid character");
 }
 
-
-/* 11: Write a javascript programme to to enter week number and print day of week*/ 
+/* 11: Write a javascript programme to to enter week number and print day of week*/
 
 let week = 7;
 
@@ -157,7 +154,7 @@ if (week == 1) {
   console.log("Invalid Input: Enter numbers from 1-7");
 }
 
-/* 12: Write a javascript programme to find number of days in a month*/ 
+/* 12: Write a javascript programme to find number of days in a month*/
 
 let month = 15;
 
@@ -178,5 +175,95 @@ if (
 } else {
   console.log("Invalid number : Enter numer from 1-12 only ");
 }
-  
-/* 13:  Write a javascript program to count total number of notes in given amount*/ 
+
+/* 13:  Write a javascript programe to count total number of notes in given amount*/
+
+/* 14: Write a javascript programe program to check whether triangle is valid or not if angles are given*/
+
+let angle1 = 40;
+let angle2 = 80;
+let angle3 = 80;
+
+let sumofAngles = angle1 + angle2 + angle3;
+
+if (sumofAngles === 180) {
+  console.log(" 🔼 Triangle is valid");
+} else {
+  console.log(" 🔽 triangle is invalid");
+}
+
+/* 15: write javascript program  to check whether triangle is equilateral, scalene or isosceles*/ 
+
+let side1 = 40;
+let side2 = 30;
+let side3 = 60;
+
+if (side1 == side2 && side2 == side3) {
+  console.log("Triangle is Equilateral");
+} else if (side1 == side2 || side1 == side3 || side2 == side3) {
+  console.log("Triangle is scalene");
+} else {
+  console.log("Triangle is Isoceles");
+};
+
+/* 16: Write javascript programme to  find all roots of a quadratic equation*/ 
+
+
+/*17: write javascript programme to  calculate profit or loss*/ 
+
+
+let costPrice = 500;
+let sellPrice = 2500;
+
+if (sellPrice > costPrice) {
+  let profit = sellPrice - costPrice;
+  console.log(`You made a profit of ${profit}`);
+} else if (costPrice > sellPrice) {
+  let loss = costPrice - sellPrice;
+  console.log(`You made a loss of ${loss}`);
+} else {
+  console.log("No profit no loss");
+};
+
+
+/* 18: Write javascript programe to enter student marks and find percentage and grade
+If percentage >= 90% : Grade A
+If percentage >= 80% : Grade B
+If percentage >= 70% : Grade C
+If percentage >= 60% : Grade D
+If percentage >= 40% : Grade E
+If percentage < 40% : Grade F*/ 
+
+let maths = 90;
+let bio = 95;
+let physics = 75;
+let chemistry = 82;
+let english = 75;
+
+let totalMArks = maths + bio + physics + chemistry + english;
+let percentage = (totalMArks / 500) * 100;
+
+console.log(`Percentage: ${percentage}%`);
+
+if (percentage >= 90) {
+  console.log("Secured A grade");
+} else if (percentage >= 80) {
+  console.log("Secured B grade");
+} else if (percentage >= 70) {
+  console.log("Secured C grade");
+} else if (percentage >= 60) {
+  console.log("Secured D grade");
+} else if (percentage >= 40) {
+  console.log("Secured E grade");
+} else {
+  console.log("Secured F grade");
+}
+
+/* 19: Write javascript programe program to input electricity unit charge and calculate the total electricity bill according to the given condition:
+For first 50 units Rs. 0.50/unit
+For next 100 units Rs. 0.75/unit
+For next 100 units Rs. 1.20/unit
+For unit above 250 Rs. 1.50/unit
+An additional surcharge of 20% is added to the bill.*/ 
+
+
