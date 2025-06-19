@@ -148,6 +148,7 @@
 /* 14:  Javascript program to swap first and last digit of a number */ 
 
 
+/*15: Javascript program to find product of digits of a number*/ 
 
 
 
