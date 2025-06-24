@@ -47,13 +47,13 @@ console.log(numArr8);
 
 //9️⃣ How to join ['a', 'b', 'c'] into "a-b-c"?
 
-let smallAlph = ['a', 'b', 'c'];
+let smallAlph = ["a", "b", "c"];
 let finalResult = smallAlph.join("-");
 console.log(finalResult);
 
 //🔟 What does ['x', 'y', 'z'].indexOf('y') return?
 
-let alphabets = ['x', 'y', 'z'];
+let alphabets = ["x", "y", "z"];
 console.log(alphabets.indexOf("y"));
 
 //1️⃣1️⃣ What’s the output of [1, 2, 3].includes(2)?
@@ -69,14 +69,12 @@ console.log(numArr10.slice(1, 3));
 //1️⃣3️⃣ How to remove 2 elements from [10, 20, 30, 40] starting at index 1?
 
 let numArr11 = [10, 20, 30, 40];
-console.log(numArr11.slice(1 ,3 ));
+console.log(numArr11.slice(1, 3));
 
 //1️⃣4️⃣ What is the result of [1, 2, 3].map(x => x * 2)?
 
-console.log([1, 2, 3].map(x => x * 2));
+console.log([1, 2, 3].map((x) => x * 2));
 
 //1️⃣5️⃣ What will [1, 2, 3].filter(x => x > 1) return?
 
-console.log([1, 2, 3].filter(x => x > 1));
-
-
+console.log([1, 2, 3].filter((x) => x > 1));
